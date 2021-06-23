@@ -3,7 +3,7 @@ Paperclip
 
 # Deprecated
 
-**[Paperclip is deprecated]**.
+**[Paperclip is deprecated] **.
 
 For new projects, we recommend Rails' own [ActiveStorage].
 
@@ -694,7 +694,7 @@ has more information on the accepted style formats.
 For more fine-grained control of the conversion process, `source_file_options` and `convert_options` can be used to pass flags and settings directly to ImageMagick's powerful Convert tool, [documented here](https://www.imagemagick.org/script/convert.php). For example:
 
 ```ruby
-has_attached_file :image, styles: { regular: ['800x800>', :png]}, 
+has_attached_file :image, styles: { regular: ['800x800>', :png]},
     source_file_options: { regular: "-density 96 -depth 8 -quality 85" },
     convert_options: { regular: "-posterize 3"}
 ```
